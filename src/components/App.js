@@ -3,16 +3,16 @@ import React from 'react'
 const App = () => {
 
 const relatives=[
-  {key:'uncle',name:"Rinku"},
-  {key:'Aunt',name:'Priya'},
-  {key:'Masi',name:'Sippi'},
-  {key:'sister',name:'Parul'},
-  {key:'mama',name:'Deepak'}
+  {key:'relativeListItem1',name:"Rinku"},
+  {key:'relativeListItem2',name:'Priya'},
+  {key:'relativeListItem3',name:'Sippi'},
+  {key:'relativeListItem4',name:'Parul'},
+  {key:'relativeListItem5',name:'Deepak'}
 ]
 
   return (
     <div id="main">
-              <ol key="relativesList">
+              <ol key="relativeList">
                {relatives.map(relative=>(
                 <li key={relative.key}>{relative.name}</li>
                ))}
